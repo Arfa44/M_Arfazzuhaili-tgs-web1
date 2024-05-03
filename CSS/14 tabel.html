@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABEL RESPONSIF</title>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {background-color: yellowgreen;}
+        </style>
+</head>
+<body>
+    <h2>Responsive Table</h2>
+<p>A responsive table will display a horizontal scroll bar if the screen is too 
+small to display the full content. Resize the browser window to see the effect:</p>
+<p>To create a responsive table, add a container element (like div) with 
+  <strong>overflow-x:auto</strong> around the table element:</p>
+
+<div style="overflow-x: auto;">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Ray</td>
+      <td>Arcadia</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Zero</td>
+      <td>Ignnatius</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Suoh</td>
+      <td>Makoto</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+  </table>
+</div>
+        <!--Tabel Responsif
+            Tabel responsif akan menampilkan bilah gulir horizontal 
+            jika layar terlalu kecil untuk menampilkan konten lengkap-->
+
+
+    <!--properti tabel css
+        border          Menetapkan semua properti perbatasan dalam satu deklarasi
+        border-collapse Menentukan apakah batas tabel harus diciutkan atau tidak
+        border-spacing  Menentukan jarak antara batas sel yang berdekatan
+        caption-side    Menentukan penempatan keterangan tabel
+        sel kosong      Menentukan apakah akan menampilkan batas dan latar belakang pada 
+                        sel kosong dalam tabel atau tidak
+        table-layout    Mengatur algoritma tata letak yang akan digunakan untuk sebuah tabel
+            -->
+</body>
+</html>

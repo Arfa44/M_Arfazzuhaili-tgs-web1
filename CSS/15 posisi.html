@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sticky</title>
+    <style>
+        div.sticky {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          padding: 5px;
+          background-color: #cae8ca;
+          border: 2px solid #4CAF50;
+        }
+        </style>
+</head>
+<body>
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+    <div class="sticky">I am sticky!</div>
+    
+    <div style="padding-bottom:2000px">
+      <p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+      <p>Scroll back up to remove the stickyness.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+      <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    </div>
+
+    <!--Posisi Properti
+        Properti positionmenentukan jenis metode penentuan posisi yang digunakan untuk suatu elemen.
+        Ada lima nilai posisi yang berbeda:
+        1. static
+            Elemen HTML diposisikan statis secara default.
+            Elemen yang diposisikan statis tidak terpengaruh oleh properti atas, bawah, kiri, dan kanan.
+            contoh=     div.static {
+                                    position: static;
+                                    border: 3px solid #73AD21;
+                                    }
+        2. relative
+            Elemen dengan position: relative;diposisikan relatif terhadap posisi normalnya.
+            Mengatur properti atas, kanan, bawah, dan kiri dari elemen yang posisinya relatif 
+            akan menyebabkannya disesuaikan menjauhi posisi normalnya. 
+            Konten lain tidak akan disesuaikan agar sesuai dengan celah yang ditinggalkan oleh elemen tersebut.
+            contoh=     div.relative {
+                                        position: relative;
+                                        left: 30px;
+                                        border: 3px solid #73AD21;
+                                        }
+        3. fixed
+            lemen dengan position: fixed;diposisikan relatif terhadap area pandang, yang berarti elemen tersebut 
+            selalu berada di tempat yang sama meskipun halaman di-scroll. Properti atas, kanan, bawah, dan kiri 
+            digunakan untuk memposisikan elemen.
+            Elemen tetap tidak meninggalkan celah di halaman tempat elemen tersebut biasanya ditempatkan.
+            contoh=     div.fixed {
+                                    position: fixed;
+                                    bottom: 0;
+                                    right: 0;
+                                    width: 300px;
+                                    border: 3px solid #73AD21;
+                                    }
+        4. absolute
+            Elemen dengan position: absolute;diposisikan relatif terhadap leluhur terdekat yang diposisikan 
+            (bukan diposisikan relatif terhadap viewport, seperti tetap).
+            Namun; jika elemen yang diposisikan absolut tidak memiliki leluhur yang diposisikan, 
+            elemen tersebut akan menggunakan badan dokumen, dan bergerak seiring dengan pengguliran halaman.
+            Catatan: Elemen dengan posisi absolut dikeluarkan dari aliran normal, dan dapat tumpang tindih dengan elemen.
+            contoh=     
+                        div.relative {
+                                        position: relative;
+                                        width: 400px;
+                                        height: 200px;
+                                        border: 3px solid #73AD21;
+                                        }
+                        div.absolute {
+                                        position: absolute;
+                                        top: 80px;
+                                        right: 0;
+                                        width: 200px;
+                                        height: 100px;
+                                        border: 3px solid #73AD21;
+                                        }   
+        5. sticky
+            Elemen dengan position: sticky;diposisikan berdasarkan posisi gulir pengguna.
+            Elemen lengket beralih antara relativedan fixed, bergantung pada posisi gulir. 
+            Itu diposisikan relatif sampai posisi offset tertentu terpenuhi di viewport - 
+            kemudian "menempel" di tempatnya (seperti posisi: tetap)
+            contoh=
+                        div.sticky {
+                                    position: -webkit-sticky; /* Safari */
+                                    position: sticky;
+                                    top: 0;
+                                    background-color: green;
+                                    border: 2px solid #4CAF50;
+                                    }
+        -->
+    
+</body>
+</html>

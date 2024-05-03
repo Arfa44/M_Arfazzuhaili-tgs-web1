@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggunakan innerHTML</title>
+</head>
+<body>
+    <h2>Sistem perkalian menggunakan InnerHTML</h2>
+    <p>Hasil dari 30 x 6 adalah....</p>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = 30 * 6;
+    </script>
+
+    <!--Untuk mengakses suatu elemen HTML, JavaScript dapat 
+        menggunakan document.getElementById(id)metode tersebut.
+        Atribut idmendefinisikan elemen HTML. 
+        Properti innerHTML mendefinisikan konten HTML-->
+</body>
+</html>

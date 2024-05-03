@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmetika</title>
+    <style>
+        * {
+          text-align: center; }
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        tr:nth-child(even) {background-color: yellowgreen}
+      </style>
+</head>
+<body>
+    <h1>JavaScript Arithmetic</h1>
+  <table>
+    <tr>
+      <th>Variabel</th>
+      <th>Nilai</th>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>y</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>z</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Hasil</td>
+      <td id="demo" onmouseover=math() onmouseleave=math2()></td>
+    </tr>
+  </table>
+  <script>
+    function math() {
+      var x = 25;
+      var y = 10;
+      var z = 20;
+     hasil = x * y / z;
+      document.getElementById("demo").innerHTML=hasil;
+    }
+    function math2() {
+      document.getElementById("demo").innerHTML="";
+    }
+  </script>
+</body>
+</html>

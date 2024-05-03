@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JavaScript in Body</title>
+</head>
+<body>
+    <h2>Demo JavaScript in Body</h2>
+
+    <p id="demo">A Paragraph Awal</p>
+    
+    <button type="button" onclick="myFunction()">Tombol Ubah</button>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph telah selesai diubah.";
+    }
+    </script>
+
+    <!--Dalam HTML, kode JavaScript disisipkan di antara tag <script>dan </script>
+        JavaScript function adalah blok kode JavaScript, yang dapat dieksekusi ketika "dipanggil".
+        Misalnya, suatu fungsi dapat dipanggil ketika suatu peristiwa terjadi, 
+        seperti ketika pengguna mengklik sebuah tombol
+    -->
+    <!--Javascript dapat detempatkan di
+        1. head html
+        2. body html
+        3. file eksternal
+            File JavaScript memiliki ekstensi file .js .
+            Untuk menggunakan skrip eksternal, masukkan 
+            nama file skrip di srcatribut (source) dari sebuah <script>tag:
+    
+        -->
+</body>
+</html>

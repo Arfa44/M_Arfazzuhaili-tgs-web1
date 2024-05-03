@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge Live Code - HTML & CSS</title>
+  <style>
+    * {
+      text-align: center;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    tr:nth-child(even) {background-color: lightgray}
+  </style>
+</head>
+<body>
+  <h1>JavaScript Arithmetic</h1>
+  <table>
+    <tr>
+      <th>Variabel</th>
+      <th>Nilai</th>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td id="nilai_a">5</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td id="nilai_b">2</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td id="nilai_c">1</td>
+    </tr>
+    <tr>
+      <td>Hasil</td>
+      <td id="demo"></td>
+    </tr>
+  </table>
+  <button onclick="ubahNilai('a')">Ubah Nilai a</button>
+  <button onclick="ubahNilai('b')">Ubah Nilai b</button>
+  <button onclick="ubahNilai('c')">Ubah Nilai c</button>
+
+  <script>
+    function math() {
+      var a = parseInt(document.getElementById("nilai_a").innerText);
+      var b = parseInt(document.getElementById("nilai_b").innerText);
+      var c = parseInt(document.getElementById("nilai_c").innerText);
+      var hasil = a + b - c;
+      document.getElementById("demo").innerHTML = hasil;
+    }
+
+    function math2() {
+      document.getElementById("demo").innerHTML = "";
+    }
+
+    function ubahNilai(variabel) {
+      let nilai_baru = prompt("Masukkan nilai baru untuk " + variabel, "");
+      if (nilai_baru != null) {
+        document.getElementById("nilai_" + variabel).innerText = nilai_baru;
+        math(); // Memanggil fungsi math untuk menghitung ulang hasil
+      }
+    }
+  </script>
+</body>
+</html>

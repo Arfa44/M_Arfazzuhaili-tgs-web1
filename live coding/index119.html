@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aritmetika</title>
+    <style>
+        #judul{
+            color: purple;
+            text-align: center;
+        }
+        #mahasiswa {
+  
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#mahasiswa td, #customers th {
+  border: 1px solid rgb(87, 87, 218);
+  padding: 8px;
+}
+
+#mahasiswa tr:nth-child(even){background-color: red;}
+
+#mahasiswa tr:hover 
+    {background-color: yellowgreen;
+    font-size: 120%;
+    font-weight: bold;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h2 id="judul">JAVASCRIPT ARITHMETIC</h2>
+    <table id="mahasiswa">
+        <tr>
+          <th>Variabel</th>
+          <th>Nilai</th>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>5</td>
+            
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>2</td>
+            
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>1</td>
+            
+        </tr>
+        <tr>
+            <td>Hasil</td>
+            <td ><onmouseover document.getElementById("demo").innerHTML = z></td>
+            
+        </tr>
+        <p id="demo"></p>
+        <script>
+            let a = 5;
+            let b = 2;
+            let c = 1;
+            let z = a + b - c;
+            document.getElementById("demo").innerHTML = z;
+            </script>
+</body>
+</html>

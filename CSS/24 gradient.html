@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADIEN</title>
+    <style>
+        #grad1 {
+          height: 55px;
+          background-color: red; /* For browsers that do not support gradients */
+          background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+        #grad2 {
+          height: 150px;
+          width: 200px;
+          background-color: red; /* For browsers that do not support gradients */
+          background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+        }
+        #grad3 {
+          height: 200px;
+          width: 200px;
+          background-color: red; /* For browsers that do not support gradients */
+          background-image: repeating-conic-gradient(red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+          border-radius: 50%;
+         }
+        </style>
+</head>
+<body>
+    <div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+        Rainbow Background
+        </div><hr>
+        <!--Contoh berikut menunjukkan cara membuat gradien linier 
+            (dari kiri ke kanan) 
+            dengan warna pelangi dan beberapa teks-->
+
+        <h3>Repeating Radial Gradient</h3>
+        <div id="grad2"></div><hr>
+                <!--diatas contoh gradien radial berulang
+                    Fungsi repeating-radial-gradient() digunakan untuk mengulang gradien radial-->
+        
+        <h3>Repeating a Conic Gradient with color-starts and -stops</h3>
+        <div id="grad3"></div>
+                <!--Contoh Gradien berbentuk kerucut yang berulang dengan 
+                        awal warna dan penghentian warna yang ditentukan-->
+
+        <!--Gradien CSS memungkinkan Anda menampilkan transisi mulus antara dua atau lebih warna tertentu.
+            CSS mendefinisikan tiga jenis gradien:
+            1. Gradien Linier (turun/atas/kiri/kanan/diagonal)
+            2. Gradien Radial (ditentukan oleh pusatnya)
+            3. Gradien Kerucut (diputar di sekitar titik pusat)-->
+</body>
+</html>
