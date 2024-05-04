@@ -9,8 +9,9 @@
 - Tugas Pemrograman Web 1
   
 ##Struktur
----
+...
 
+.Jenis bahasa yang digunnakan
 📦HTML
  ┣ 📜index.html
  ┣ 📜index1.html
@@ -114,4 +115,4 @@
  ┣ 📜index1201.html
  ┣ 📜index121.html
  ┗ 📜index1211.html
- ---
+ ....
