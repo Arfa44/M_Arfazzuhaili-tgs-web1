@@ -1,17 +1,17 @@
-#Tugas Pemrograman Web
- Tugas Pemrograman Web 1 minggu pertama
+# Tugas Pemrograman Web 1 minggu pertama
 
-##W3SCHOOL Program yang dicoba
+## W3SCHOOL Program yang dicoba
 - W3SCHOOL HTML
 - W3SCHOOL CSS
 - W3SCHOOL JAVASCRIPT
 
-- Tugas Pemrograman Web 1
+# Tugas Pemrograman Web 1
   
 ##Struktur
-...
 
-.Jenis bahasa yang digunnakan
+
+Jenis bahasa yang digunakan
+
 📦HTML
  ┣ 📜index.html
  ┣ 📜index1.html
@@ -115,4 +115,4 @@
  ┣ 📜index1201.html
  ┣ 📜index121.html
  ┗ 📜index1211.html
- ...
+
